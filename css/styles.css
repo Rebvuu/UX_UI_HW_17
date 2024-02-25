@@ -1,37 +1,85 @@
 body {
     font-family: "Delius", sans-serif;
+    margin: 0;
 }
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
+
+.navigation {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
 }
-.logo {
-    width: 23%;
-    padding: 1%;
-    text-align: center;
+
+.logo img {
+    width: 80px; /* Adjust as needed */
 }
-nav {
-    width: 73%;
-    padding: 1%;
+
+nav ul {
+    display: flex;
 }
-ul {
-    width: 50%;
-    margin-left: auto;
+
+nav ul li {
+    margin-left: 1em; /* Space between navigation items */
+    list-style: none;
 }
+
 .heroImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 600px;
     padding: 25px;
 }
+
 .content {
-    width: 500px;
-    margin: 0 auto;
+    text-align: center;
 }
-footer {
+
+.content img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.projects {
+    text-align: center;
+    margin-top: 300px;
+}
+.casestudy1 {
+}
+.casestudy1:hover {
     background-color: aqua;
-    padding: 1%;
 }
-footer ul {
-    display: inline-block;
-    vertical-align: top;
-    padding: 1%;
+.casestudy2 {
+
+}
+.casestudy2:hover {
+    background-color: aqua;
+}
+.casestudy3 {
+
+}
+.casestudy3:hover {
+    background-color: aqua;
+}
+.casestudy4 {
+
+}
+.casestudy4:hover {
+    background-color: aqua;
+}
+.casestudies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 500px;
+}
+.casestudies div{
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
+    border: solid grey 1px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
 }
