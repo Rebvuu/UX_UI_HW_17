@@ -12,9 +12,9 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="findme.html">Find Me</a></li>
+                    <li><a href="index.html"><button>Home</button></a></li>
+                    <li><a href="projects.html"><button>Projects</button></a></li>
+                    <li><a href="findme.html"><button>Find me</button></a></li>
                 </ul>
             </nav>
         </header>
@@ -22,13 +22,37 @@
             <h1>Projects I've worked on</h1>
         </section>
         <div class="casestudies">
-            <div class="casestudy1">Case study 1
+            <div class="casestudy1">
+                <img src="images/glowguidecover.PNG">
+                <p>Mobile app design - GlowGuide</p><a href="casestudy1.html"><button>Read more</button></a>
             </div>
-            <div class="casestudy2">Case study 2
+            <div class="casestudy2">
+                <img id="CERimg" src="images/CERcover2.png"><a href="casestudy2.html"><button>Read more</button></a>
+                <script>
+                    document.getElementById('CERimg').addEventListener('mouseover', function() {
+                      this.src = "images/CER.gif"
+                    });
+                    CERimg.addEventListener('mouseout', function() {
+                        this.src = "images/CERcover2.png";
+                    });
+                </script>
+                <p>Website redesign - Clean Energy Regulator</p>
             </div>
-            <div class="casestudy3">Case study 3
+            <div class="casestudy3">
+                <img id="AYCCimg" src="images/AYCCcover.PNG"><a href="casestudy3.html"><button>Read more</button></a>
+                <script>
+                    document.getElementById('AYCCimg').addEventListener('mouseover', function() {
+                      this.src = "images/AYCC.gif"
+                    });
+                    AYCCimg.addEventListener('mouseout', function() {
+                        this.src = "images/AYCCcover.png";
+                    });
+                </script>
+                <p>Website redesign - Australian Youth Climate Coalition</p>
             </div>
-            <div class="casestudy4">Case study 4
+            <div class="casestudy4">
+                <img src="images/mindfulreadercover.PNG"><a href="casestudy4.html"><button>Read more</button></a>
+                <p>Mobile app design - MindJournal</p>
             </div>
         </div>
     </body>

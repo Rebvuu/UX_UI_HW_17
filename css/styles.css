@@ -18,7 +18,7 @@ body {
     }
 }
 .navigation {
-    background-color: aqua;
+    background-color: #bad0e7;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@ body {
 }
 
 .logo img {
-    width: 80px;
+    width: 100px;
 }
 
 nav ul {
@@ -38,7 +38,25 @@ nav ul li {
     margin-left: 1em; /* space between navigation items */
     list-style: none;
 }
-
+nav button {
+    background-color: #bad0e7;
+    border: none;
+    color: #4c587d;
+    box-shadow: none;
+    width: 150px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+nav button:hover {
+    color: white;
+    border: none;
+    font-size: 30px;
+}
+nav button:active {
+    color: white;
+    border: none;
+}
 .heroImg {
     display: flex;
     justify-content: center;
@@ -51,11 +69,14 @@ nav ul li {
 .content {
     text-align: center;
 }
+.content h2 {
+    width: 900px;
+}
 
 .content img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 /* styling projects page */
 .projects {
@@ -63,43 +84,162 @@ nav ul li {
     margin-top: 300px;
     grid-column: 1 / -1;
 }
-.casestudy1 {
+.casestudy1 img{
+    max-width: 850px;
+    max-height: 500px;
 }
-.casestudy2 {
-
+.casestudy2 img{
+    max-width: 850px;
+    max-height: 500px;
+    border: 2px solid white;
 }
-.casestudy3 {
-
+.casestudy3 img{
+    width: 100%;
+    max-width: 850px;
 }
-.casestudy4 {
-
+.casestudy4 img{
+    height: 100%;
+    max-height: 500px;
+}
+.casestudy1 p{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    color: #26546a;
+    font-size: large;
+}
+.casestudy2 p{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    color: white;
+    font-size: large;
+}
+.casestudy3 p{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    color: white;
+    font-size: large;
+}
+.casestudy4 p{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    color: white;
+    font-size: large;
+}
+.casestudy1 button{
+    position: absolute;
+    bottom: 15px;
+    right: 5%;
+}
+.casestudy2 button{
+    position: absolute;
+    bottom: 15px;
+    right: 5%;
+}
+.casestudy3 button{
+    position: absolute;
+    bottom: 15px;
+    right: 5%;
+}
+.casestudy4 button{
+    position: absolute;
+    bottom: 15px;
+    right: 5%;
+}
+.casestudy1{
+    background-color: #fefbf5;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.casestudy2{
+    background-color: #26546a;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.casestudy3{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.casestudy4{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 /* case study hover states */
 .casestudy1:hover {
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .casestudy2:hover {
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .casestudy3:hover {
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .casestudy4:hover {
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .casestudies {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 500px;
+    margin-top: 200px;
     grid-column: 1 / -1;
 }
 .casestudies div{
     width: 100%;
-    max-width: 400px;
+    max-width: 900px;
     height: 600px;
     border: solid grey 1px;
     border-radius: 10px;
     margin: 10px;
-    text-align: center;
+}
+.casestudies button {
+    background-color: white;
+    border: 1px solid #4c587d;
+    border-radius: 25px;
+    color: #4c587d;
+    box-shadow: none;
+    width: 150px;
+    height: 30px;
+}
+.casestudies button:hover {
+    background-color: #bad0e7;
+    border: 1px solid #4c587d;
+    color: #4c587d;
+}
+.casestudies button:active {
+    background-color: #4c587d;
+    border: 1px solid white;
+    color: white;
+}
+h1 {
+    font-size: 50px;
+    color: #4c587d;
+}
+/* styling Glow guide page */
+#GGimg {
+    max-width: 1000px;
+}
+.Glowguide {
+    width: 100%;
+    grid-column: 1 / -1;
+    display: grid;
+    place-items: center;
+
+}
+.Glowguide p {
+    width: 700px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#GGaffinity {
+    width: 1000px;
 }
